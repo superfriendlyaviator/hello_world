@@ -1,10 +1,8 @@
 def ask(prompt)
-  print prompt
-  input = gets.chomp
-  while input.nil? || input.empty?
+  begin
     print prompt
     input = gets.chomp
-  end
+  end while input.nil? || input.empty?
   input
 end
 
